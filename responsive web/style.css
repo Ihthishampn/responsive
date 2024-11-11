@@ -1,0 +1,190 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Heading styling */
+.heading-1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  font-family: "playfair", serif;
+}
+
+.heading span {
+  font-size: 20px;
+  color: #555;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: black;
+  border-top: 1px solid #504e4e;
+  font-size: 12px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 14px;
+  margin: 0 15px;
+  transition: color 1.9s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(219, 79, 61); !important;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: #343a40;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+  background-color: #495057;
+  color: rgb(219, 79, 61); !important;
+}
+
+/* Hover effect for heading */
+.heading-1:hover, .heading span:hover {
+  color: rgb(219, 79, 61); !important;
+}
+
+/* Image Styling */
+.image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container for navbar and heading */
+.container-fluid {
+  padding: 0 15px;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .heading-1 {
+    font-size: 36px;
+  }
+
+  .heading span {
+    font-size: 18px;
+  }
+
+  .image-8 {
+    position: relative;
+    left: 0;
+    margin-top: 30px;
+    text-align: center; /* Center images on small screens */
+  }
+
+  .image-11 {
+    position: relative;
+    left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-1 {
+    font-size: 30px;
+  }
+
+  .heading span {
+    font-size: 16px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+
+  .center-1, .center-2 {
+    font-size: 0.875rem;
+  }
+}
+
+/* Centered text styling */
+.center-note {
+  margin-top: 120px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.center-1, .center-2 {
+  font-size: 1.25rem;
+  color: rgba(128, 128, 128, 0.87);
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.center-1 {
+  margin-bottom: 20px;
+}
+
+.center-2 {
+  font-size: 1.25rem;
+}
+
+/* Media Queries for Centered Note */
+@media (max-width: 768px) {
+  .center-1, .center-2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .center-1, .center-2 {
+    font-size: 0.875rem;
+  }
+}
+
+/* Updated image classes for responsiveness */
+.image-4 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.image-8, .image-11 {
+  text-align: center;
+  margin-top: 200px;
+  position: relative;
+  left: 0;
+  width: 100%;
+  max-width: 100%; /* Ensure the images fit in smaller screens */
+  display: inline-block;
+}
+
+.image-8 img, .image-11 img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+  margin-bottom: 20px;
+}
